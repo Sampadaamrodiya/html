@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+      }
+      /* th {
+        background-color: lightgray;
+      }
+      td {
+        background-color: lightyellow;
+      } */
+
+      /* .two th:nth-child(odd){background-color: lightblue;}
+        .two th:nth-child(even){background-color: rgb(14, 152, 14);}
+        .two td:nth-child(odd){background-color: lightgreen;}
+        .two td:nth-child(even){background-color: lightpink;} */
+
+      /* #two th:nth-child(odd) {background-color: lightblue;}
+        #two th:nth-child(even) {background-color: lightgreen;} */
+
+        
+        #three tr:nth-child(odd) {
+        background-color: rgba(150, 212, 212, 0.4);
+        }
+
+       #three th:nth-child(odd),td:nth-child(odd){
+       background-color: rgba(150, 212, 212, 0.4);
+       }
+       #two tr:hover{
+        background-color: brown;
+        color: aliceblue;
+       }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>25</td>
+        <td>New York</td>
+      </tr>
+      <tr>
+        <td>Jane</td>
+        <td>30</td>
+        <td>Los Angeles</td>
+      </tr>
+    </table>
+
+    <hr />
+    <table id="two" class="two">
+        <caption>with hover effect</caption>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>25</td>
+        <td>New York</td>
+      </tr>
+      <tr>
+        <td>Jane</td>
+        <td>30</td>
+        <td>Los Angeles</td>
+      </tr>
+    </table>
+
+    <br>
+    <hr>
+    <table class="three" id="three">
+      <tr>
+        <td>Name</td>
+        <td>Age</td>
+        <td>City</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>25</td>
+        <td>New York</td>
+      </tr>
+      <tr>
+        <td>Jane</td>
+        <td>30</td>
+        <td>Los Angeles</td>
+      </tr>
+  </body>
+</html>
