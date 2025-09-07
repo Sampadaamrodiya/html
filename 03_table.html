@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+
+    <style>
+        .border{
+            border: 1px solid black;
+            border-radius:15px;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Tables</h1>
+    <p>This is a simple table displaying names, ages, and cities.</p>
+    <table>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>City</th>
+        </tr>
+      
+        <tr>
+          <td>Alice</td>
+          <td>30</td>
+          <td>New York</td>
+        </tr>
+        <tr>
+          <td>Bob</td>
+          <td>25</td>
+          <td>Los Angeles</td>
+        </tr>
+        <tr>
+          <td>Charlie</td>
+          <td>35</td>
+          <td>Chicago</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h3>table with borders<h3>
+    <table style="border:2px solid black;">
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>City</th>
+        </tr>
+      
+        <tr>
+          <td>Alice</td>
+          <td>30</td>
+          <td>New York</td>
+        </tr>
+        <tr>
+          <td>Bob</td>
+          <td>25</td>
+          <td>Los Angeles</td>
+        </tr>
+        <tr>
+          <td>Charlie</td>
+          <td>35</td>
+          <td>Chicago</td>
+        </tr>
+    </table>
+
+        <br>
+        <hr>
+        <h3>table with cell borders</h3>
+        <table>
+            <caption>Table with cell borders</caption>  
+            <!-- caption -->
+            <tr>
+              <th class="border">Name</th>
+              <th class="border">Age</th>
+              <th class="border">City</th>
+            </tr>
+            <tr>
+              <td class="border">Alice</td>
+              <td class="border">30</td>
+              <td class="border">New York</td>
+            </tr>
+            <tr>
+              <td class="border">Bob</td>
+              <td class="border">25</td>
+              <td class="border">Los Angeles</td>
+            </tr>
+            <tr>
+              <td class="border">Charlie</td>
+              <td class="border">35</td>
+              <td class="border">Chicago</td>
+            </tr>
+        </table>
+
+        <br>
+        <hr>
+        <h3>table with vertical headers</h3>
+        <table border="1" style="border-spacing:10px;">
+            <tr>
+              <th>Name</th>
+              <td>Alice</td>
+            </tr>
+            <tr>
+              <th>Age</th>
+              <td>30</td>
+            </tr>
+            <tr>
+              <th>City</th>
+              <td>New York</td>
+            </tr>
+        </table>
+
+        <br>
+        <br>
+        <hr>
+        <h3>table with merged cells</h3>
+        <table border="1">
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>alice</td>
+                <td>Bob</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td colspan="2">Charlie</td>
+                <td>35</td>
+        </table>
+
+        <hr>
+        <table border="1">
+            <caption>Table with merged cells and rowspan</caption>  
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Alice</td>
+                <td>30</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>Boston</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>25</td>
+                <td>Los Angeles</td>
+            </tr>
+        </table>
+  </body>
+</html>
