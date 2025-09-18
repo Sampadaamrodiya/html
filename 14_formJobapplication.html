@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Job Application Form</h1>
+
+    <form>
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" id="name">
+        <br>
+
+        <label for="email">Email:</label>
+        <br>    
+        <input type="email" id="email">
+        <br>
+        <label for="phone">Phone:</label>
+        <br>
+        <input type="tel" id="phone">
+        <br>
+         
+        <label for="resume">Resume:</label>
+        <br>
+        <input type="file" id="resume">
+        <br>
+
+        <label for="exp">Experience:</label>
+        <br>
+        <input type="number" id="exp" min="0" max="50" value="0">
+        <br>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <input type="checkbox" id="html" name="skill" value="html">
+            <label for="html">HTML</label>
+            <br>
+            <input type="checkbox" id="css" name="skill" value="css">
+            <label for="css">CSS</label>
+            <br>
+            <input type="checkbox" id="javascript" name="skill" value="javascript">
+            <label for="javascript">JavaScript</label>
+        </fieldset><br>
+
+        <label for="education">Highest Education:</label> <br>
+        <select name="education" id="education">
+         <option value="highschool">highschool</option>
+         <option value="bachelor">Bachelor's</option>
+         <option value="master">Master's</option>
+         <option value="phd">PhD</option>
+        </select>
+        <br>
+
+        <br>
+        <label>Available for:</label>
+        <br>
+        <input type="radio" id="fulltime" name="available" value="fulltime">
+        <label for="fulltime">Full-Time</label> 
+        <br>    
+        <input type="radio" id="parttime" name="available" value="parttime">
+        <label for="parttime">Part-Time</label>
+        <br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea rows="5" cols="50" id="comments"></textarea>
+        <input type="submit" value="Submit Application">
+    </form>
+</body>
+</html>
