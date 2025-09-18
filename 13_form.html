@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1> Event Registration</h1>
+    <form>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name"><br><br>
+        
+    <label for="email">Email:</label>
+    <input type="email" id="email"><br><br>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone"><br><br>
+    
+    <label for="occupation">Occupation:</label>
+    <select name="occupation" id="occupation">
+        <option value="student">Student</option>
+        <option value="employed">Employed</option>
+        <option value="self-employed">Self-Employed</option>
+        <option value="unemployed">Unemployed</option>
+        <option value="other" selected>Other</option>
+        
+    </select><br><br>
+    <fieldset>
+        <legend>Interests</legend>
+        <label for="interest">Interest Areas:</label><br>
+        <input type="checkbox" id="html" name="interest" value="html"> HTML<br>
+        <input type="checkbox" id="css" name="interest" value="css"> CSS<br>
+        <input type="checkbox" id="javascript" name="interest" value="javascript"> JavaScript<br>
+    </fieldset>
+    
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" rows="4" cols="50"></textarea>
+    <input type="submit" value="Register">
+</form>
+</body>
+</html>
